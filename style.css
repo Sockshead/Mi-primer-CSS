@@ -1,0 +1,56 @@
+/*Normalizar Navegador*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+}
+
+.base_logo {
+    background: #3b5998;
+    text-indent: -999em;
+    width: 400px;
+    height: 440px;
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+    border: 50px solid #3b5998;
+    border-bottom: 0;
+}
+
+.base_logo:before {
+    content: "/20";
+    position: absolute;
+    background: #3b5998;
+    width: 160px;
+    height: 360px;
+    bottom: -90px;
+    right: -110px;
+    border: 70px solid white;
+    border-radius: 65px;
+}
+
+.base_logo:after {
+    content: "/20";
+    position: absolute;
+    width: 175px;
+    top: 200px;
+    height: 65px;
+    background: white;
+    right: 65px;
+}
